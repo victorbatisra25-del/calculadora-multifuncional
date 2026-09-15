@@ -56,4 +56,23 @@ input{
 
     display:flex;
     justify-content:space-between;
+
+    margin-top:20px;
+
+}
+
+button{
+
+    width:48%;
+    padding:10px;
+
+    cursor:pointer;
+
+}
+
+#resultado{
+
+    margin-top:25px;
+    text-align:center;
+
 }
