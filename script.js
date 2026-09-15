@@ -19,21 +19,22 @@ function subtrair() {
 function multiplicar() {
     let numero1 = Number(document.getElementById("numero1").value);
     let numero2 = Number(document.getElementById("numero2").value);
-    
-    document.getElementById("resultado").innerText =
-    "Resultado: " + (numero1 * numero2);
+
+    let resultado = numero1 * numero2;
+
+    document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
 }
 
 function dividir() {
     let numero1 = Number(document.getElementById("numero1").value);
     let numero2 = Number(document.getElementById("numero2").value);
-        
-    if (numero2 === 0) {
-        document.getElementById("resultado").innerText =
-        "Resultado: Não é possível dividir por zero.";
-        return;
+
+    if (numero1 == 0 | numero2 == 0) {
+        cument.getElementById("resultado").innerHTML = "Resultado não pode ser divisivel por 0.";
+        return
     }
-        
-    document.getElementById("resultado").innerText =
-    "Resultado: " + (numero1 / numero2);
+
+    let resultado = numero1 / numero2;
+
+    document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
 }
