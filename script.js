@@ -29,7 +29,7 @@ function dividir() {
     let numero1 = Number(document.getElementById("numero1").value);
     let numero2 = Number(document.getElementById("numero2").value);
 
-    if (numero1 == 0 | numero2 == 0) {
+    if (numero1 == 0 || numero2 == 0) {
         cument.getElementById("resultado").innerHTML = "Resultado não pode ser divisivel por 0.";
         return
     }
